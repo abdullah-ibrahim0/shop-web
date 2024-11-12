@@ -1,0 +1,115 @@
+/* Container for the footer */
+.footer {
+    background-color: white; /* Light background color */
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    position: relative;
+}
+
+/* Main container that holds all items in a row */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 40px; /* Space between items */
+}
+
+/* Logo container */
+.logo-container img {
+    width: 120px;
+    margin-top: 100px; 
+    margin-right: 100px;
+}
+
+/* Navigation and Links container */
+.nav-container {
+    display: flex;
+    gap: 25px; /* Spacing between navigation sections */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-grow: 1; /* Allow the nav-container to grow and fill available space */
+}
+
+/* Style for individual navigation sections */
+.nav-container nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nav-container h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* List styling for navigation */
+.nav-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-container li {
+    margin: 8px 0;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.nav-container a:hover {
+    color: #0073e6;
+}
+
+/* Social media links container */
+.social-links {
+    display: flex;
+    flex-direction: row; /* Stack the items vertically */
+    gap: 20px; /* Space between "Follow Us" and the icons */
+    align-items: center; /* Center the items */
+}
+
+/* Styling for social links */
+.social-links h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Individual social icon */
+.social-link {
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #0073e6;
+}
+
+/* Footer links container for "Guide", "Terms", "Privacy Policy" */
+.footer-links {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #0073e6;
+}

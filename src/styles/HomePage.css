@@ -1,0 +1,37 @@
+/* src/styles/HomePage.css */
+
+
+/* Seasons Collection Heading */
+.seasons-collection-section h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.09px;
+    text-align: center;
+    margin-top: 40px; /* Add some space above the title */
+    opacity: 1; /* Ensure it is visible */
+    color: rgb(62, 62, 62); /* Adjust color if needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Other Styling (if required) */
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.09px;
+    text-align: center;
+    margin-top: 40px;
+    opacity: 1;
+    color: rgb(62, 62, 62);
+}

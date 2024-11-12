@@ -1,0 +1,40 @@
+/* src/styles/MoreButtons.css */
+
+/* Styles for individual "More" buttons */
+.more-btn {
+    width: 118px; /* width set as Hug (118px) */
+    height: 48px; /* height set as Hug (48px) */
+    padding: 12px 30px;
+    gap: 10px;
+    border-radius: 20px 0px 0px 0px; /* Adjusted border radius */
+    background: #F7F6F0; /* Background color */
+    opacity: 1; /* Ensure button is visible by default */
+    border: none; /* Removing default border */
+    cursor: pointer;
+    font-size: 20px; /* Font size set to 20px */
+    font-weight: 400; /* Font weight set to 400 */
+    line-height: 24.2px; /* Line height set to 24.2px */
+    text-align: left; /* Align text to the left */
+    text-underline-position: from-font; /* Underline position set to from-font */
+    text-decoration-skip-ink: none; /* Ensuring no skipped ink in text decoration */
+    font-family: 'Inter', sans-serif; /* Font family set to Inter */
+    color: #333; /* Set text color to a dark shade for visibility */
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Add transition effect for opacity */
+    margin-bottom: 0; /* Remove margin from the bottom of each button */
+  }
+  
+  /* Button hover effect */
+  .more-btn:hover {
+    background-color: #e0d9c6; /* Slight change on hover for visual effect */
+    opacity: 1; /* Keep opacity 1 even when hovered */
+  }
+  
+  /* Button container for More buttons */
+  .button-container {
+    display: flex;
+    flex-direction: row; /* Align buttons horizontally */
+    justify-content: center;
+    gap: 360px; /* Add space between the buttons */
+    margin-top: 20px;
+  }
+  

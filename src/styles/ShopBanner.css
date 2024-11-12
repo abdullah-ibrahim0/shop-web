@@ -1,0 +1,126 @@
+/* src/styles/ShopBanner.css */
+
+/* ShopBanner container */
+.shop-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    color: rgb(62, 62, 62);
+    margin-left: auto; /* Move everything to the right */
+    margin-right: auto; /* Move everything to the right */
+    max-width: 1200px; /* Limit max width for better centering */
+}
+
+/* Styling for the "Home" and "Products" text */
+.banner-left a.home,
+.banner-left a.products {
+    width: 40px;
+    height: 17px;
+    gap: 0px;
+    opacity: 1;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: left;
+    text-decoration: none;
+    color: rgb(62, 62, 62);
+}
+
+.banner-left a {
+    color: rgb(62, 62, 62);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.banner-left a:hover {
+    text-decoration: underline;
+}
+
+/* Centered Logo */
+.banner-center {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+}
+
+.banner-center .logo-image {
+    max-height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Styling for the right section (search bar and icons) */
+.banner-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    gap: 15px; /* Add some space between search bar and the icons */
+}
+
+/* Wrapper for the search bar and the icon */
+.search-wrapper {
+    position: relative;
+}
+
+/* Search Bar Styling */
+.banner-right input[type="text"] {
+    padding: 10px 30px 10px 30px; /* Added padding for spacing */
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+}
+
+/* Search Icon Styling (SVG as background) */
+.search-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/search-icon.svg'); /* Path to the search icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Search Bar Focus Effect */
+.banner-right input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 128, 255, 0.5);
+}
+
+/* Styling for the icons (two new icons) */
+.icon-wrapper {
+    display: flex;
+    gap: 10px; /* Space between icons */
+}
+
+.icon-wrapper .icon {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* Add the first icon */
+.icon-wrapper .icon1 {
+    background-image: url('../assets/Lock.svg'); /* Path to the first icon */
+}
+
+/* Add the second icon */
+.icon-wrapper .icon2 {
+    background-image: url('../assets/user.svg'); /* Path to the second icon */
+}
+
+/* Hover effect for icons */
+.icon-wrapper .icon:hover {
+    opacity: 0.7;
+}

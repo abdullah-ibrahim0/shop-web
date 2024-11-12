@@ -1,0 +1,89 @@
+/* src/styles/ProductList.css */
+
+/* Styling for the product list container */
+.product-list {
+    width: 100%; /* Make sure it takes full width */
+    background: #F7F6F0; /* Background color */
+    padding: 20px; /* Add some padding */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Styling for the product items container */
+.product-items {
+    display: grid; /* Use grid to display items */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Responsive grid with 3 items per row */
+    gap: 20px; /* Space between items */
+    margin-bottom: 20px; /* Space below items before button */
+}
+
+/* Styling for individual product items */
+.product-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #333;
+}
+
+.product-item p {
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Container for the "See More" button */
+.see-more-btn-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Vertically center the button */
+    margin-top: 20px; /* Add some space above the button */
+}
+
+/* Styling for the "See More" button */
+.see-more-btn {
+    padding: 12px 30px; /* Add padding for the button */
+    font-family: Inter, sans-serif; /* Set the font family */
+    background-color: #FFFFFF; /* White background color */
+    color: black; /* Black text color */
+    font-size: 16px; /* Font size for the button */
+    font-weight: bold; /* Bold text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    display: inline-flex; /* Allow items inside the button to be aligned horizontally */
+    justify-content: space-between; /* Space out the text and icon */
+    align-items: center; /* Vertically center text and icon */
+    gap: 8px; /* Add space between the text and icon */
+    width: auto; /* Set width to auto to adjust based on content */
+    height: 40px; /* Set a consistent height */
+}
+
+/* Styling for the icon inside the button */
+.see-more-btn svg {
+    width: 16px; /* Set the width of the icon */
+    height: 16px; /* Set the height of the icon */
+    fill: black; /* Set icon color to black */
+}
+
+/* Hover effect for the "See More" button */
+.see-more-btn:hover {
+    background-color: #f0f0f0; /* Light grey background on hover */
+    transform: scale(1.05); /* Slightly increase button size on hover */
+}
